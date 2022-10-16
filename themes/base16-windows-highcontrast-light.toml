@@ -50,6 +50,11 @@
 "variable.other.member" = "base0B"
 "warning" = "base09"
 
+# Mode highlighting
+"ui.statusline.normal" = { fg = "base00", bg = "base03" }
+"ui.statusline.insert" = { fg = "base00", bg = "base0B" }
+"ui.statusline.select" = { fg = "base00", bg = "base0F" }
+
 [palette]
 base00 = "#fcfcfc" # Default Background
 base01 = "#e8e8e8" # Lighter Background (Used for status bars, line number and folding marks)
