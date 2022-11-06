@@ -1,3 +1,6 @@
+# Scheme name: London Tube
+# Scheme author: Jan T. Sott
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 "attributes" = "base09"
 "comment" = { fg = "base03", modifiers = ["italic"] }
 "constant" = "base09"
