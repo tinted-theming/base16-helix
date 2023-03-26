@@ -1,5 +1,5 @@
-# Scheme name: Apprentice
-# Scheme author: romainl
+# Scheme name: standardized-light
+# Scheme author: ali (https://github.com/ali-githb/base16-standardized-scheme)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
 "attributes" = "base09"
@@ -74,19 +74,19 @@
 "ui.window" = { bg = "base01" }
 
 [palette]
-base00 = "#262626" # Default Background
-base01 = "#af5f5f" # Lighter Background (Used for status bars, line number and folding marks)
-base02 = "#5f875f" # Selection Background
-base03 = "#87875f" # Comments, Invisibles, Line Highlighting
-base04 = "#5f87af" # Dark Foreground (Used for status bars)
-base05 = "#5f5f87" # Default Foreground, Caret, Delimiters, Operators
-base06 = "#5f8787" # Light Foreground (Not often used)
-base07 = "#6c6c6c" # Light Background (Not often used)
-base08 = "#444444" # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
-base09 = "#ff8700" # Integers, Boolean, Constants, XML Attributes, Markup Link Url
-base0A = "#87af87" # Classes, Markup Bold, Search Text Background
-base0B = "#ffffaf" # Strings, Inherited Class, Markup Code, Diff Inserted
-base0C = "#87afd7" # Support, Regular Expressions, Escape Characters, Markup Quotes
-base0D = "#8787af" # Functions, Methods, Attribute IDs, Headings
-base0E = "#5fafaf" # Keywords, Storage, Selector, Markup Italic, Diff Changed
-base0F = "#bcbcbc" # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
+base00 = "#ffffff" # Default Background
+base01 = "#eeeeee" # Lighter Background (Used for status bars, line number and folding marks)
+base02 = "#cccccc" # Selection Background
+base03 = "#767676" # Comments, Invisibles, Line Highlighting
+base04 = "#767676" # Dark Foreground (Used for status bars)
+base05 = "#444444" # Default Foreground, Caret, Delimiters, Operators
+base06 = "#333333" # Light Foreground (Not often used)
+base07 = "#222222" # Light Background (Not often used)
+base08 = "#d03e3e" # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+base09 = "#d7691d" # Integers, Boolean, Constants, XML Attributes, Markup Link Url
+base0A = "#ad8200" # Classes, Markup Bold, Search Text Background
+base0B = "#31861f" # Strings, Inherited Class, Markup Code, Diff Inserted
+base0C = "#00998f" # Support, Regular Expressions, Escape Characters, Markup Quotes
+base0D = "#3173c5" # Functions, Methods, Attribute IDs, Headings
+base0E = "#9e57c2" # Keywords, Storage, Selector, Markup Italic, Diff Changed
+base0F = "#895025" # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
