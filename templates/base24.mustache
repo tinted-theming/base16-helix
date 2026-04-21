@@ -1,0 +1,101 @@
+# Scheme name: {{scheme-name}}
+# Scheme author: {{scheme-author}}
+# Template author: Tinted Theming (https://github.com/tinted-theming)
+
+"attributes" = "base09"
+"comment" = { fg = "base03", modifiers = ["italic"] }
+"constant" = "base09"
+"constant.character.escape" = "base0C"
+"constant.numeric" = "base09"
+"constructor" = "base0D"
+"debug" = "base03"
+"diagnostic" = { modifiers = ["underlined"] }
+"diff.delta" = "base13"
+"diff.minus" = "base12"
+"diff.plus" = "base14"
+"error" = "base08"
+"function" = "base0D"
+"hint" = "base03"
+"info" = "base0D"
+"keyword" = "base0E"
+"label" = "base0E"
+"namespace" = "base0E"
+"operator" = "base05"
+"special" = "base0D"
+"string"  = "base0B"
+"type" = "base0A"
+"variable" = "base08"
+"variable.other.member" = "base0B"
+"warning" = "base09"
+
+"markup.bold" = { fg = "base13", modifiers = ["bold"] }
+"markup.heading" = "base16"
+"markup.italic" = { fg = "base17", modifiers = ["italic"] }
+"markup.link.text" = "base12"
+"markup.link.url" = { fg = "base09", modifiers = ["underlined"] }
+"markup.list" = "base08"
+"markup.quote" = "base15"
+"markup.raw" = "base14"
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+
+"diagnostic.hint" = { underline = { style = "curl" } }
+"diagnostic.info" = { underline = { style = "curl" } }
+"diagnostic.warning" = { underline = { style = "curl" } }
+"diagnostic.error" = { underline = { style = "curl" } }
+
+"ui.background" = { bg = "base00" }
+"ui.bufferline.active" = { fg = "base00", bg = "base03", modifiers = ["bold"] }
+"ui.bufferline" = { fg = "base04", bg = "base10" }
+"ui.cursor" = { fg = "base13", modifiers = ["reversed"] }
+"ui.cursor.insert" = { fg = "base13", modifiers = ["reversed"] }
+"ui.cursorline.primary" = { fg = "base05", bg = "base01" }
+"ui.cursor.match" = { fg = "base13", modifiers = ["reversed"] }
+"ui.cursor.select" = { fg = "base13", modifiers = ["reversed"] }
+"ui.gutter" = { bg = "base00" }
+"ui.help" = { fg = "base06", bg = "base10" }
+"ui.linenr" = { fg = "base03", bg = "base00" }
+"ui.linenr.selected" = { fg = "base04", bg = "base01", modifiers = ["bold"] }
+"ui.menu" = { fg = "base05", bg = "base01" }
+"ui.menu.scroll" = { fg = "base03", bg = "base01" }
+"ui.menu.selected" = { fg = "base01", bg = "base04" }
+"ui.popup" = { bg = "base10" }
+"ui.selection" = { bg = "base02" }
+"ui.selection.primary" = { bg = "base02" }
+"ui.statusline" = { fg = "base04", bg = "base01" }
+"ui.statusline.inactive" = { bg = "base10", fg = "base03" }
+"ui.statusline.insert" = { fg = "base00", bg = "base14" }
+"ui.statusline.normal" = { fg = "base00", bg = "base03" }
+"ui.statusline.select" = { fg = "base00", bg = "base17" }
+"ui.text" = "base05"
+"ui.text.focus" = "base05"
+"ui.virtual.indent-guide" = { fg = "base03" }
+"ui.virtual.inlay-hint" = { fg = "base03" }
+"ui.virtual.ruler" = { bg = "base01" }
+"ui.virtual.jump-label" = { fg = "base13", modifiers = ["bold"] }
+"ui.window" = { bg = "base01" }
+
+[palette]
+base00 = "#{{base00-hex}}" # Default Background
+base01 = "#{{base01-hex}}" # Lighter Background (Used for status bars, line number and folding marks)
+base02 = "#{{base02-hex}}" # Selection Background
+base03 = "#{{base03-hex}}" # Comments, Invisibles, Line Highlighting
+base04 = "#{{base04-hex}}" # Dark Foreground (Used for status bars)
+base05 = "#{{base05-hex}}" # Default Foreground, Caret, Delimiters, Operators
+base06 = "#{{base06-hex}}" # Light Foreground (Not often used)
+base07 = "#{{base07-hex}}" # Light Background (Not often used)
+base08 = "#{{base08-hex}}" # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+base09 = "#{{base09-hex}}" # Integers, Boolean, Constants, XML Attributes, Markup Link Url
+base0A = "#{{base0A-hex}}" # Classes, Markup Bold, Search Text Background
+base0B = "#{{base0B-hex}}" # Strings, Inherited Class, Markup Code, Diff Inserted
+base0C = "#{{base0C-hex}}" # Support, Regular Expressions, Escape Characters, Markup Quotes
+base0D = "#{{base0D-hex}}" # Functions, Methods, Attribute IDs, Headings
+base0E = "#{{base0E-hex}}" # Keywords, Storage, Selector, Markup Italic, Diff Changed
+base0F = "#{{base0F-hex}}" # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
+base10 = "#{{base10-hex}}" # Darker Background
+base11 = "#{{base11-hex}}" # Darkest Background
+base12 = "#{{base12-hex}}" # Bright Red
+base13 = "#{{base13-hex}}" # Bright Yellow
+base14 = "#{{base14-hex}}" # Bright Green
+base15 = "#{{base15-hex}}" # Bright Cyan
+base16 = "#{{base16-hex}}" # Bright Blue
+base17 = "#{{base17-hex}}" # Bright Magenta

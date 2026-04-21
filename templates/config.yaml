@@ -1,3 +1,14 @@
-default:
-  extension: .toml
-  output: themes
+base16:
+  filename: "themes/{{scheme.system}}-{{scheme.slug}}.toml"
+  supported-systems: [base16]
+
+base24:
+  filename: "themes/{{scheme.system}}-{{scheme.slug}}.toml"
+  supported-systems: [base24]
+
+tinted8:
+  filename: "themes/{{scheme.system}}-{{scheme.slug}}.toml"
+  supported-systems: [tinted8]
+  supports:
+    tinted8-styling: ">=0.2.0"
+    tinted8-builder: ">=0.2.0"

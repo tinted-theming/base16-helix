@@ -1,0 +1,145 @@
+# {{scheme.name}}
+# Scheme system: {{scheme.system}}
+# Scheme author: {{scheme.author}}
+# Template author: Tinted Theming (https://github.com/tinted-theming)
+
+# Syntax highlighting
+"attribute" = "attribute"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"constant" = "constant"
+"constant.character.escape" = "constant-escape"
+"constant.numeric" = "constant-numeric"
+"constructor" = "constructor"
+"debug" = "comment"
+"diagnostic" = { modifiers = ["underlined"] }
+"diff.delta" = "diff-changed"
+"diff.minus" = "diff-deleted"
+"diff.plus" = "diff-inserted"
+"error" = "status-error"
+"function" = "function"
+"function.builtin" = "function-builtin"
+"hint" = "comment"
+"info" = "status-info"
+"keyword" = "keyword"
+"label" = "label"
+"namespace" = "namespace"
+"operator" = "keyword-operator"
+"punctuation" = "punctuation"
+"special" = "function"
+"string" = "string"
+"string.regexp" = "string-regexp"
+"type" = "type"
+"variable" = "variable"
+"variable.builtin" = "variable-builtin"
+"variable.other.member" = "variable-member"
+"variable.parameter" = "variable-parameter"
+"warning" = "status-warning"
+
+"markup.bold" = { fg = "markup-bold", modifiers = ["bold"] }
+"markup.heading" = "markup-heading"
+"markup.italic" = { fg = "markup-italic", modifiers = ["italic"] }
+"markup.link.text" = "markup-link"
+"markup.link.url" = { fg = "link", modifiers = ["underlined"] }
+"markup.list" = "markup-list"
+"markup.quote" = "markup-quote"
+"markup.raw" = "markup-raw"
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+
+"diagnostic.hint" = { underline = { style = "curl" } }
+"diagnostic.info" = { underline = { style = "curl" } }
+"diagnostic.warning" = { underline = { style = "curl" } }
+"diagnostic.error" = { underline = { style = "curl" } }
+
+"ui.background" = { bg = "bg-normal" }
+"ui.bufferline" = { fg = "fg-dark", bg = "bg-normal" }
+"ui.bufferline.active" = { fg = "bg-normal", bg = "comment", modifiers = ["bold"] }
+"ui.cursor" = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursor.insert" = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursor.match" = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursor.select" = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursorline.primary" = { fg = "fg-normal", bg = "highlight-line-bg" }
+"ui.gutter" = { bg = "gutter-bg" }
+"ui.help" = { fg = "fg-light", bg = "bg-light" }
+"ui.linenr" = { fg = "gutter-fg", bg = "gutter-bg" }
+"ui.linenr.selected" = { fg = "highlight-line-fg", bg = "highlight-line-bg", modifiers = ["bold"] }
+"ui.menu" = { fg = "fg-normal", bg = "bg-light" }
+"ui.menu.scroll" = { fg = "comment", bg = "bg-light" }
+"ui.menu.selected" = { fg = "bg-light", bg = "highlight-line-fg" }
+"ui.popup" = { bg = "bg-light" }
+"ui.selection" = { bg = "selection-bg" }
+"ui.selection.primary" = { bg = "selection-bg" }
+"ui.statusline" = { fg = "fg-dark", bg = "bg-light" }
+"ui.statusline.inactive" = { bg = "bg-light", fg = "comment" }
+"ui.statusline.insert" = { fg = "bg-normal", bg = "string" }
+"ui.statusline.normal" = { fg = "bg-normal", bg = "comment" }
+"ui.statusline.select" = { fg = "bg-normal", bg = "deprecated" }
+"ui.text" = "fg-normal"
+"ui.text.focus" = "fg-normal"
+"ui.virtual.indent-guide" = { fg = "indent-guide" }
+"ui.virtual.inlay-hint" = { fg = "comment" }
+"ui.virtual.ruler" = { bg = "bg-light" }
+"ui.virtual.jump-label" = { fg = "accent", modifiers = ["bold"] }
+"ui.window" = { bg = "bg-light" }
+
+[palette]
+# UI backgrounds
+bg-normal = "#{{ui.global.background.normal.hex}}"
+bg-dark = "#{{ui.global.background.dark.hex}}"
+bg-light = "#{{ui.global.background.light.hex}}"
+
+# UI foregrounds
+fg-normal = "#{{ui.global.foreground.normal.hex}}"
+fg-dark = "#{{ui.global.foreground.dark.hex}}"
+fg-light = "#{{ui.global.foreground.light.hex}}"
+
+# UI elements
+accent = "#{{ui.accent.hex}}"
+cursor = "#{{ui.cursor.normal.hex}}"
+deprecated = "#{{ui.deprecated.hex}}"
+gutter-bg = "#{{ui.gutter.background.hex}}"
+gutter-fg = "#{{ui.gutter.foreground.hex}}"
+highlight-line-bg = "#{{ui.highlight.line.background.hex}}"
+highlight-line-fg = "#{{ui.highlight.line.foreground.hex}}"
+indent-guide = "#{{ui.indent-guide.background.hex}}"
+link = "#{{ui.link.hex}}"
+selection-bg = "#{{ui.selection.background.hex}}"
+
+# Status
+status-error = "#{{ui.status.error.hex}}"
+status-warning = "#{{ui.status.warning.hex}}"
+status-info = "#{{ui.status.info.hex}}"
+status-success = "#{{ui.status.success.hex}}"
+
+# Syntax
+attribute = "#{{syntax.entity.other.attribute-name.hex}}"
+comment = "#{{syntax.comment.default.hex}}"
+constant = "#{{syntax.constant.default.hex}}"
+constant-escape = "#{{syntax.constant.character.escape.hex}}"
+constant-numeric = "#{{syntax.constant.numeric.default.hex}}"
+constructor = "#{{syntax.entity.name.function.constructor.hex}}"
+function = "#{{syntax.entity.name.function.default.hex}}"
+function-builtin = "#{{syntax.support.function.builtin.hex}}"
+keyword = "#{{syntax.keyword.default.hex}}"
+keyword-operator = "#{{syntax.keyword.operator.hex}}"
+label = "#{{syntax.entity.name.label.hex}}"
+namespace = "#{{syntax.entity.name.namespace.hex}}"
+punctuation = "#{{syntax.punctuation.default.hex}}"
+string = "#{{syntax.string.default.hex}}"
+string-regexp = "#{{syntax.string.regexp.hex}}"
+type = "#{{syntax.entity.name.type.default.hex}}"
+variable = "#{{syntax.variable.default.hex}}"
+variable-builtin = "#{{syntax.variable.language.hex}}"
+variable-member = "#{{syntax.variable.other.property.hex}}"
+variable-parameter = "#{{syntax.variable.parameter.hex}}"
+
+# Markup
+diff-changed = "#{{syntax.markup.changed.hex}}"
+diff-deleted = "#{{syntax.markup.deleted.hex}}"
+diff-inserted = "#{{syntax.markup.inserted.hex}}"
+markup-bold = "#{{syntax.markup.bold.hex}}"
+markup-heading = "#{{syntax.markup.heading.hex}}"
+markup-italic = "#{{syntax.markup.italic.hex}}"
+markup-link = "#{{syntax.markup.link.hex}}"
+markup-list = "#{{syntax.markup.list.default.hex}}"
+markup-quote = "#{{syntax.markup.quote.hex}}"
+markup-raw = "#{{syntax.markup.raw.hex}}"
