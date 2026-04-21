@@ -39,7 +39,7 @@
 "markup.heading" = "markup-heading"
 "markup.italic" = { fg = "markup-italic", modifiers = ["italic"] }
 "markup.link.text" = "markup-link"
-"markup.link.url" = { fg = "link", modifiers = ["underlined"] }
+"markup.link.url" = { fg = "link-fg", modifiers = ["underlined"] }
 "markup.list" = "markup-list"
 "markup.quote" = "markup-quote"
 "markup.raw" = "markup-raw"
@@ -53,10 +53,10 @@
 "ui.background" = { bg = "bg-normal" }
 "ui.bufferline" = { fg = "fg-dark", bg = "bg-normal" }
 "ui.bufferline.active" = { fg = "bg-normal", bg = "comment", modifiers = ["bold"] }
-"ui.cursor" = { fg = "cursor", modifiers = ["reversed"] }
-"ui.cursor.insert" = { fg = "cursor", modifiers = ["reversed"] }
-"ui.cursor.match" = { fg = "cursor", modifiers = ["reversed"] }
-"ui.cursor.select" = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursor" = { fg = "cursor-fg", modifiers = ["reversed"] }
+"ui.cursor.insert" = { fg = "cursor-fg", modifiers = ["reversed"] }
+"ui.cursor.match" = { fg = "cursor-fg", modifiers = ["reversed"] }
+"ui.cursor.select" = { fg = "cursor-fg", modifiers = ["reversed"] }
 "ui.cursorline.primary" = { fg = "fg-normal", bg = "highlight-line-bg" }
 "ui.gutter" = { bg = "gutter-bg" }
 "ui.help" = { fg = "fg-light", bg = "bg-light" }
@@ -93,15 +93,15 @@ fg-dark = "#{{ui.global.foreground.dark.hex}}"
 fg-light = "#{{ui.global.foreground.light.hex}}"
 
 # UI elements
-accent = "#{{ui.accent.hex}}"
-cursor = "#{{ui.cursor.normal.hex}}"
+accent = "#{{ui.accent.normal.hex}}"
+cursor-fg = "#{{ui.cursor.normal.foreground.hex}}"
 deprecated = "#{{ui.deprecated.hex}}"
 gutter-bg = "#{{ui.gutter.background.hex}}"
 gutter-fg = "#{{ui.gutter.foreground.hex}}"
 highlight-line-bg = "#{{ui.highlight.line.background.hex}}"
 highlight-line-fg = "#{{ui.highlight.line.foreground.hex}}"
 indent-guide = "#{{ui.indent-guide.background.hex}}"
-link = "#{{ui.link.hex}}"
+link-fg = "#{{ui.link.normal.foreground.hex}}"
 selection-bg = "#{{ui.selection.background.hex}}"
 
 # Status
